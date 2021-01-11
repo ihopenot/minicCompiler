@@ -1,0 +1,44 @@
+int scanf(string fmt, ...);
+int printf(string fmt, ...);
+
+void out(int x) {
+    printf("%ld\n", x);
+}
+void outf(float x) {
+    printf("%lf\n", x);
+}
+
+int main() {
+    int l, r;
+    scanf("%ld%ld", &l, &r);
+    for(int i = l; i <= r; i = i+1) {
+        printf("%ld ", i);
+    }
+    printf("\n");
+    while(l <= r) {
+        printf("%ld ", l);
+        l = l+1;
+    }
+
+    int w, h;
+    scanf("%ld%ld", &w, &h); 
+    for(int i=1; i<=h; i=i+1) {
+        printf("%ld ", i);
+        for(int j=1; j<=w; j = j+1)
+            printf("%ld ", j);
+        printf("\n");
+    }
+
+    int i = 1, j = 1;
+    while(i <= h) {
+        printf("%ld ", i);
+        j = 1;
+        while(j <= w) {
+            printf("%ld ", j);
+            j = j+1;
+        }
+        printf("\n");
+        i = i + 1;
+    }
+    return 0;
+}

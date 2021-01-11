@@ -1,0 +1,16 @@
+int scanf(string fmt, ...);
+int printf(string fmt, ...);
+
+void out(int x) {
+    printf("%ld\n", x);
+}
+void outf(float x) {
+    printf("%lf\n", x);
+}
+
+int main() {
+    int x[100];
+    scanf("%d%d", &x[1], &x[3]);
+    x[2] = x[1] + x[3];
+    printf("%d\n", x[2]);
+}

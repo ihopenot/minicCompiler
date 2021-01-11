@@ -1,0 +1,30 @@
+int scanf(string fmt, ...);
+int printf(string fmt, ...);
+
+void out(int x) {
+    printf("%ld\n", x);
+}
+void outf(float x) {
+    printf("%lf\n", x);
+}
+
+int main() {
+    int a, b;
+    scanf("%ld%ld", &a, &b);
+    out(a+b);
+    out(a-b);
+    out(a*b);
+    out(a/b);
+    out(a&b);
+    out(a|b);
+    out((a+100)/5+2*b-1);
+    out((a+b)&(a-12)|123+(a&2)*b);
+
+    float c, d;
+    scanf("%lf%lf", &c, &d);
+    outf(c+d);
+    outf(c-d);
+    outf(c*d);
+    outf(c/d);
+    outf(c+d*c+d/3*2);
+}

@@ -1,0 +1,21 @@
+int scanf(string fmt, ...);
+int printf(string fmt, ...);
+
+void out(int x) {
+    printf("%ld\n", x);
+}
+void outf(float x) {
+    printf("%lf\n", x);
+}
+
+int main() {
+    int a;
+    scanf("%ld", &a);
+    if(a >= 50) {
+        if(a >= 75) out(4);
+        else out(3);
+    } 
+    else if(a >= 30) out(2);
+    else if(a >= 20) out(1);
+    else out(0);
+}
